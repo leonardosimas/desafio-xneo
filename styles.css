@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #303030;
+  color: #fff;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#taskForm {
+  margin-bottom: 20px;
+}
+
+#taskForm input[type="text"] {
+  width: 50%;
+  padding: 16px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+#taskForm button {
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#taskList li .description {
+  flex-grow: 1;
+  margin-right: 16px;
+  color: #000;
+}
+
+#taskList li.completed-task .description {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#taskList li .delete-button {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Estilos para layout responsivo */
+@media screen and (max-width: 500px) {
+  #taskForm input[type="text"],
+  #taskForm button {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #taskList li {
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+}
